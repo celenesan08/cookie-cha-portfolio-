@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookiecha</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><button class="tab-btn active" data-tab="home">Home</button></li>
+        <li><button class="tab-btn" data-tab="about">About Us</button></li>
+        <li><button class="tab-btn" data-tab="specials">Specials</button></li>
+        <li><button class="tab-btn" data-tab="location">Location</button></li>
+
+      </ul>
+  
+  <div class="social-media">
+    <h3>Follow Us</h3>
+    <a href="https://facebook.com/cookiecha" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      📘 Facebook
+    </a><br>
+    <a href="https://instagram.com/cookiecha" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      📸 Instagram
+    </a><br>
+    <a href="https://twitter.com/cookiecha" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+      🐦 Twitter
+    </a>
+  </div>
+</nav>
+
+    </nav>
+
+    <main class="content">
+      <section id="home" class="tab-content active">
+        <h1>Welcome to Cookiecha</h1>
+        <a href="https://www.cookiecha.com" target="_blank" rel="noopener noreferrer">Visit our main site</a>
+        <button onclick="Cookies('oreo')">Order Cookies</button>
+        <button onclick="BobaDrinks('mochi')">Order Drinks</button>
+
+        <p id="counter">Cookies baked: 0</p>
+
+<!-- Popular Items Section -->
+<section class="popular-items">
+  <h2> Popular cookies</h2>
+  <ul>
+    <li>Classic Oreo crunch</li>
+    <li>Matcha Mochi Bites</li>
+    <li>Double Chocolate Chip</li>
+  </ul>
+
+  <h2> Popular Boba Drinks</h2>
+  <ul>
+    <li>Brown Sugar Milk Tea</li>
+    <li>Taro Milk Tea</li>
+    <li>Honeydew Green Tea</li>
+  </ul>
+</section>
+
+
+
+        <textarea placeholder="Leave a comment..."></textarea>
+        <br>
+        <button onclick="submitComment()">Submit Comment</button>
+      </section>
+
+      <section id="about" class="tab-content">
+        <h2>🍪 About Us</h2>
+        <p>
+          At Cookiecha, we bake happiness one cookie at a time!  
+          Our boba drinks & cookies are made fresh daily using premium ingredients, 
+          inspired by a blend of classic flavors and Asian desserts.  
+          Whether you’re craving a sweet treat or a refreshing drink, 
+          we’ve got something to brighten your day.
+        </p>
+        <p>
+          Founded in 2025, Cookiecha started as a small kitchen experiment and grew into a beloved spot for cookie lovers across Sweet City.  
+          Thank you for supporting local bakers!
+        </p>
+      </section>
+
+      <section id="specials" class="tab-content">
+        <h2>✨ Special Edition Cookies & Boba Drinks of the Month ✨</h2>
+        <h3>Cookies</h3>
+        <ul>
+          <li><strong>Matcha Mochi Delight:</strong> Soft mochi cookies infused with premium matcha powder.</li>
+          <li><strong>Double Chocolate Oreo Crunch:</strong> Oreo cookies with extra chocolate chips and a crispy crunch.</li>
+        </ul>
+        <h3>Boba Drinks</h3>
+        <ul>
+          <li><strong>Brown Sugar Mochi Milk Tea:</strong> Creamy milk tea with chewy mochi pearls and rich brown sugar syrup.</li>
+          <li><strong>Classic Taro Boba:</strong> Smooth taro-flavored milk tea with chewy boba pearls.</li>
+        </ul>
+      </section>
+
+      <section id="location" class="tab-content">
+        <h2>📍 Our Store Location</h2>
+        <p>123 Cookie Street, Sweet City, CA 90001</p>
+        <h3>🕒 Business Hours</h3>
+        <ul>
+          <li>Monday – Friday: 9:00 AM – 7:00 PM</li>
+          <li>Saturday: 10:00 AM – 8:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </section>
+    
+  
+
+    </main>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
